@@ -73,13 +73,15 @@
           position: absolute;
           background: $dark-blue;
           color: $white;
-          top: 69px;
+          top: 95px;
           left: 20px;
           -webkit-transform: translateY(10%);
           -ms-transform: translateY(10%);
           transform: translateY(10%);
           padding-left: 0px;
           width: 213px;
+          box-shadow: 2px 2px 5px 1px rgb(0 0 0 / 20%),
+            -2px 0px 5px 1px rgb(0 0 0 / 20%);
           opacity: 0;
           -webkit-transition: all 0.3s ease-in-out;
           -o-transition: all 0.3s ease-in-out;
@@ -98,6 +100,7 @@
             padding-bottom: 10px;
             a {
               font-size: 17px;
+              display: block;
               &:hover {
                 color: $dark-blue;
               }
@@ -113,7 +116,7 @@
         font-size: 20px;
         font-weight: 700;
         color: $white;
-        padding: 0.5rem 2rem 0;
+        padding: 1.875rem 2rem;
         i {
           vertical-align: middle;
           margin-top: 3px;
@@ -177,8 +180,8 @@
         padding-bottom: 60px;
         text-align: center;
         font-weight: 700;
-        font-size: 30px;
-        line-height: 41px;
+        font-size: 40px;
+        line-height: 51px;
         span {
           display: block;
         }
@@ -577,7 +580,7 @@
 
 /* Contact */
 #contact-area {
-  background: url(./assets/images/banner/7.png);
+  background: url(/assets/images/banner/7.png);
   height: 600px;
   background-position: center;
   background-size: cover;
