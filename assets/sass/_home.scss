@@ -86,8 +86,10 @@
           position: absolute;
           background: $dark-blue;
           color: $white;
-          top: 69px;
+          top: 92px;
           left: 20px;
+          box-shadow: 2px 2px 5px 1px rgb(0 0 0 / 20%),
+            -2px 0px 5px 1px rgb(0 0 0 / 20%);
           -webkit-transform: translateY(10%);
           -ms-transform: translateY(10%);
           transform: translateY(10%);
@@ -126,7 +128,7 @@
         font-size: 20px;
         font-weight: 700;
         color: $white;
-        padding: 0.5rem 2rem 0;
+        padding: 1.875rem 2rem;
         & i {
           vertical-align: middle;
           margin-top: 3px;
@@ -262,16 +264,6 @@
   background-size: cover !important;
   background-position: center !important;
   height: 94vh;
-  &::before {
-    content: "";
-    background-image: url(/assets/images/banner/1.png);
-    width: 100%;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    position: absolute;
-    height: 100%;
-  }
 }
 .slider-content-middle {
   position: absolute;
@@ -373,6 +365,9 @@
     margin-top: 0%;
     height: calc(580px + 20vw);
     max-width: 200vw;
+    #particles-js {
+      display: none;
+    }
   }
   .slider-content-middle {
     top: 36%;
@@ -393,7 +388,6 @@
       }
     }
   }
-
   .slider-info {
     bottom: -28%;
     & .slider-item {
@@ -430,7 +424,7 @@
 #about-us {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url(/assets/images/banner/5.png);
+  position: relative;
   & .about-title {
     padding-right: 33px;
     & h6 {
@@ -518,6 +512,9 @@
         padding: 6px 10px;
         font-size: 13px;
       }
+    }
+    #particles-js-2 {
+      display: none;
     }
   }
 }
@@ -832,7 +829,7 @@
 #team-area {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-image: url(/assets/images/banner/5.png);
+  position: relative;
   & .team-area-heading {
     & h2 {
       color: $orange;
@@ -930,6 +927,9 @@
     & .container-fill {
       padding-left: 25px;
       padding-right: 25px;
+    }
+    #particles-js-3 {
+      display: none;
     }
   }
   .team-area-heading {
@@ -1232,7 +1232,7 @@
 #technology {
   padding-top: 80px;
   padding-bottom: 100px;
-  background-image: url(/assets/images/banner/5.png);
+  position: relative;
   & .technology-content {
     & .technology-heading {
       margin-bottom: 50px;
@@ -1297,6 +1297,11 @@
     & h2 {
       font-size: 20px !important;
     }
+  }
+  .aos-animate {
+  }
+  #particles-js-4 {
+    display: none;
   }
 }
 /*================================================================*/

@@ -223,8 +223,8 @@
     padding-right: 30px !important;
   }
   .about-content-first {
-    background-image: url(/assets/images/banner/5.png);
     padding-bottom: 70px;
+    position: relative;
     .about-box {
       .about-title {
         h6 {
@@ -306,9 +306,9 @@
     }
   }
   .about-content-third {
-    background-image: url(/assets/images/banner/5.png);
     padding-top: 100px;
     padding-bottom: 100px;
+    position: relative;
     .about-box {
       .about-title {
         h6 {
@@ -483,6 +483,10 @@
         }
       }
     }
+  }
+  #particles-js-2,
+  #particles-js-3 {
+    display: none;
   }
 }
 

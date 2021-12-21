@@ -1,15 +1,13 @@
 #contact-page {
   position: relative;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 100px;
-
   .container-fluid {
     max-width: 1140px !important;
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
   .contact-content {
-    background: url(/assets/images/banner/5.png);
     padding-bottom: 100px;
     .contact-heading {
       p {
@@ -52,9 +50,7 @@
       }
     }
   }
-  .contact-info {
-    background: url(/assets/images/banner/5.png);
-  }
+
   .contact-right {
     img {
       width: 100%;

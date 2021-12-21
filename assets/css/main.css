@@ -179,8 +179,9 @@ section {
   position: absolute;
   background: #2c2e43;
   color: #ffffff;
-  top: 69px;
+  top: 92px;
   left: 20px;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2), -2px 0px 5px 1px rgba(0, 0, 0, 0.2);
   -webkit-transform: translateY(10%);
   -ms-transform: translateY(10%);
   transform: translateY(10%);
@@ -218,7 +219,7 @@ section {
   font-size: 20px;
   font-weight: 700;
   color: #ffffff;
-  padding: 0.5rem 2rem 0;
+  padding: 1.875rem 2rem;
 }
 #primary-navbar .navbar-collapse .navbar-nav .nav-link i {
   vertical-align: middle;
@@ -344,16 +345,6 @@ section {
   background-position: center !important;
   height: 94vh;
 }
-#slider::before {
-  content: "";
-  background-image: url(/assets/images/banner/1.png);
-  width: 100%;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  position: absolute;
-  height: 100%;
-}
 
 .slider-content-middle {
   position: absolute;
@@ -455,6 +446,9 @@ section {
     height: calc(580px + 20vw);
     max-width: 200vw;
   }
+  #slider #particles-js {
+    display: none;
+  }
 
   .slider-content-middle {
     top: 36%;
@@ -510,7 +504,7 @@ section {
 #about-us {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url(/assets/images/banner/5.png);
+  position: relative;
 }
 #about-us .about-title {
   padding-right: 33px;
@@ -600,6 +594,9 @@ section {
   #about-us .about-title a {
     padding: 6px 10px;
     font-size: 13px;
+  }
+  #about-us #particles-js-2 {
+    display: none;
   }
 }
 /*================================================================*/
@@ -901,7 +898,7 @@ section {
 #team-area {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-image: url(/assets/images/banner/5.png);
+  position: relative;
 }
 #team-area .team-area-heading h2 {
   color: #fb7000;
@@ -983,6 +980,9 @@ section {
   #team-area .container-fill {
     padding-left: 25px;
     padding-right: 25px;
+  }
+  #team-area #particles-js-3 {
+    display: none;
   }
 
   .team-area-heading h2 {
@@ -1251,7 +1251,7 @@ section {
 #technology {
   padding-top: 80px;
   padding-bottom: 100px;
-  background-image: url(/assets/images/banner/5.png);
+  position: relative;
 }
 #technology .technology-content .technology-heading {
   margin-bottom: 50px;
@@ -1301,6 +1301,10 @@ section {
 @media only screen and (max-width: 739px) {
   .technology-heading h2 {
     font-size: 20px !important;
+  }
+
+  #particles-js-4 {
+    display: none;
   }
 }
 /*================================================================*/
@@ -1712,8 +1716,8 @@ section {
   padding-right: 30px !important;
 }
 #about-area .about-content-first {
-  background-image: url(/assets/images/banner/5.png);
   padding-bottom: 70px;
+  position: relative;
 }
 #about-area .about-content-first .about-box .about-title h6 {
   position: relative;
@@ -1787,9 +1791,9 @@ section {
   color: #676767;
 }
 #about-area .about-content-third {
-  background-image: url(/assets/images/banner/5.png);
   padding-top: 100px;
   padding-bottom: 100px;
+  position: relative;
 }
 #about-area .about-content-third .about-box .about-title h6 {
   position: relative;
@@ -1922,6 +1926,11 @@ section {
   }
   #about-page .about-content-fourth h6::before {
     width: 140px !important;
+  }
+
+  #particles-js-2,
+#particles-js-3 {
+    display: none;
   }
 }
 /* Mobile: width < 740px */
@@ -2512,7 +2521,7 @@ section {
 /* Recruitment Page End */
 #contact-page {
   position: relative;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 #contact-page .container-fluid {
@@ -2521,7 +2530,6 @@ section {
   padding-right: 20px !important;
 }
 #contact-page .contact-content {
-  background: url(/assets/images/banner/5.png);
   padding-bottom: 100px;
 }
 #contact-page .contact-content .contact-heading p {
@@ -2562,9 +2570,6 @@ section {
 #contact-page .contact-content .contact-box .contact-items .item p {
   font-size: 17px;
 }
-#contact-page .contact-info {
-  background: url(/assets/images/banner/5.png);
-}
 #contact-page .contact-right img {
   width: 100%;
 }
@@ -2588,10 +2593,15 @@ section {
     padding: 10px 5 0px !important;
   }
 }
+#header {
+  height: 100px;
+  position: relative;
+}
+
 #blog-page {
-  background: url(/assets/images/banner/5.png);
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 100px;
+  position: relative;
 }
 #blog-page .container-fluid {
   max-width: 1140px !important;
@@ -2777,6 +2787,63 @@ section {
   .pagination li span {
     padding: 0px 5px !important;
   }
+
+  #particles-js-2 {
+    display: none;
+  }
+}
+/* ---- reset ---- */
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#particles-js-2 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -1;
+}
+
+#particles-js-3 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -1;
+}
+
+#particles-js-4 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 /*# sourceMappingURL=main.css.map */
