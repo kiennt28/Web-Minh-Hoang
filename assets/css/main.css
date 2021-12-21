@@ -439,7 +439,7 @@ section {
 /* Mobile: width < 740px */
 @media only screen and (max-width: 739px) {
   #slider {
-    background-image: url(/assets/images/banner/banner-mobile.png) !important;
+    background-image: url(./assets/images/banner/banner-mobile.png) !important;
     background-size: 100% !important;
     background-repeat: no-repeat !important;
     margin-top: 0%;
@@ -788,7 +788,7 @@ section {
 #feature {
   padding-top: 80px;
   padding-bottom: 100px;
-  background: url(/assets/images/banner/4.png);
+  background: url(./assets/images/banner/4.png);
 }
 #feature .feature-content .feature-heading h2 {
   margin-bottom: 40px;
@@ -1169,7 +1169,7 @@ section {
 #case-studies-area {
   padding-top: 100px;
   padding-bottom: 150px;
-  background-image: url(/assets/images/banner/4.png);
+  background-image: url(./assets/images/banner/4.png);
 }
 #case-studies-area .case-studies-content .case-studies-heading {
   margin-bottom: 50px;
@@ -1430,7 +1430,7 @@ section {
 #page-footer .footer-main {
   padding-top: 80px;
   padding-bottom: 100px;
-  background-image: url(/assets/images/banner/4.png);
+  background-image: url(./assets/images/banner/4.png);
 }
 #page-footer .footer-main .container-fluid {
   max-width: 1230px;
@@ -1890,7 +1890,7 @@ section {
     padding-right: 15px !important;
   }
   #about-page #slider {
-    background-image: url(/assets/images/banner/mb-3.png) !important;
+    background-image: url(./assets/images/banner/mb-3.png) !important;
     height: 655px;
     max-width: 200vw;
   }
@@ -2015,7 +2015,7 @@ section {
 }
 /* Contact */
 #contact-area {
-  background: url(/assets/images/banner/7.png);
+  background: url(./assets/images/banner/7.png);
   height: 600px;
   background-position: center;
   background-size: cover;
@@ -2071,7 +2071,7 @@ section {
 /* Mobile: width < 740px */
 @media only screen and (max-width: 739px) {
   #contact-area {
-    background: url(/assets/images/banner/mb-1.png);
+    background: url(./assets/images/banner/mb-1.png);
     height: 400px;
   }
   #contact-area .contact-heading span {

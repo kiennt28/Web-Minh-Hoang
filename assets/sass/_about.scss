@@ -427,7 +427,7 @@
       padding-right: 15px !important;
     }
     #slider {
-      background-image: url(/assets/images/banner/mb-3.png) !important;
+      background-image: url(./assets/images/banner/mb-3.png) !important;
       height: 655px;
       max-width: 200vw;
     }
@@ -577,7 +577,7 @@
 
 /* Contact */
 #contact-area {
-  background: url(/assets/images/banner/7.png);
+  background: url(./assets/images/banner/7.png);
   height: 600px;
   background-position: center;
   background-size: cover;
@@ -632,7 +632,7 @@
 /* Mobile: width < 740px */
 @media only screen and (max-width: 739px) {
   #contact-area {
-    background: url(/assets/images/banner/mb-1.png);
+    background: url(./assets/images/banner/mb-1.png);
     height: 400px;
     .contact-heading {
       span {
