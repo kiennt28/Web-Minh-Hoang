@@ -789,7 +789,7 @@ section {
 #feature {
   padding-top: 80px;
   padding-bottom: 100px;
-  background: url(./assets/images/banner/4.png);
+  background: url(/assets/images/banner/4.png);
 }
 #feature .feature-content .feature-heading h2 {
   margin-bottom: 40px;
@@ -1202,6 +1202,7 @@ section {
 }
 #case-studies-area .case-studies-content .case-carousel .owl-nav button {
   margin: 0;
+  transition-duration: 200ms;
 }
 #case-studies-area .case-studies-content .case-carousel .owl-nav button.owl-prev {
   position: relative;
@@ -1226,13 +1227,16 @@ section {
   border-radius: 0px 10px 10px 0px;
 }
 #case-studies-area .case-studies-content .case-carousel .owl-nav button:hover {
-  color: #2c2e43;
-  background: #ffffff;
+  color: #fb7000 !important;
+  background-color: #fb7000 !important;
 }
 #case-studies-area .case-studies-content .case-carousel .owl-nav button i {
   padding: 30px 24px;
   background: #ffffff;
   font-size: 30px;
+}
+#case-studies-area img {
+  width: 100%;
 }
 
 /* Tablet: width >= 740px and width < 1024px */
